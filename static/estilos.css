@@ -111,7 +111,7 @@ header {
 
 .wrapper .Formulario-login {
     width: 100%;
-    padding: 30px;
+    padding: 20px;
 } 
 
 .Formulario-login h2 {
@@ -160,7 +160,6 @@ header {
     font-weight: 500;
     pointer-events: none;
     transition: 0.7s;
-
 }
 
 .input-box input:focus~label,
@@ -175,4 +174,15 @@ header {
     top: -15px;
 }
 
+.recuerda-olvido {
+    background-color: blue;
+    font-size: 0.9em;
+}
+
+.recuerda-olvido label {
+    position : fixed;
+    top : 1;
+    align-items : right;
+    
+}
 
