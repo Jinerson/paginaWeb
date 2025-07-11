@@ -175,14 +175,37 @@ header {
 }
 
 .recuerda-olvido {
-    background-color: rgb(255, 255, 255);
+    position: relative;
     font-size: 0.9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 20px 0px;
 }
 
 .recuerda-olvido label {
-    position : fixed;
-    top : 1;
-    align-items : right;
+    position: absolute;
+    left: 0;
+    display : flex;
+    align-items : center;
+    gap : 5px;
+    color : #fff;
+    width: 30%;
+    margin-left: 5px;
+
+}
+
+.recuerda-olvido a {
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    color:#fff;
+    transition: 0.3s;
+    background-color: red;
+    margin-right: 0px;
+    
     
 }
+
+
 
