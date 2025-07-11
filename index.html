@@ -1,32 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Document</title>
-	<link rel="stylesheet" href="static/styles.css">
-</head>
-<body>
-		<header>
-			<nav class = "navbar">
-				<p class = "logo">Logo</p>
-				<ul class = "navbar-options">
-					<a href = "#" class = "navbar-option">Inicio</a>
-					<a href = "#" class = "navbar-option">Base de datos</a>
-					<a href = "#" class = "navbar-option">Servicios</a>
-				</ul>
-				<button type = "submit" class = "boton-entrar-registrar">Entrar</button>
-			</nav>
-			<section class = "formulario-box">
-				<h2 class = "login-text">Login</h2>
-				<section class = "log-in-box"></section>
-					<input type = "mail" class = "input-box" required></input>
-					<label>Email</label>
-				<section class = "log-in-box"></section>
-					<input type = "password" class = "input-box" required></input>
-					<label>contraseña</label>
-			</section>
-		</header>
+<html lang="es">
 
-		<section>
-		</section>
-	</body>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="static/estilos.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class = "barranav">
+            <ul>
+                <a href="#">Inicio</a>
+                <a href="#">Catalogo</a>
+                <a href="#">Ofertas</a>
+                <a href="#">Contacto</a>
+            </ul>
+        </nav>
+        <button class = "btonEntrarRegistro">Entrar</button>
+    </header>
+    <ion-ico name = "heart"></ion-ico>
+    <section class="wrapper"> 
+        <section class="Formulario-login entrar">
+            <h2>Inicio de Sesión</h2>
+            <form action="">
+                <section class = "input-box">
+                    <input type="mail" title="Introduce tu correo electronico" required>
+                    <span class = "icono">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <label>Email</label>
+                    
+                </section>  
+                <section class = "input-box">
+                    <input type="password" class = "input-pw" title="Introduce tu contraseña" required>
+                    <span class = "icono">
+                        <ion-icon name="lock"></ion-icon>
+                    </span>
+                    <label>Contraseña</label>
+                    
+                </section>
+                <section class="recuerda-olvido">
+                    <label>
+                        <input type="checkbox">
+                        Recuerdame
+                    </label>
+                    <a href="#">¿Ha olvidado su contraseña?</a>
+                </section>
+                <button type="submit" class = "btn">Entrar</button>
+                <section class = "registro-cuenta">
+                    <p>¿No tienes una cuenta?</p>
+                    <a href="#" class="link-registro login">Crear cuenta</a>
+                </section>
+            </form>
+        </section>
+    </section>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>    
+</body>
 </html>
