@@ -7,7 +7,7 @@
 
 body {
     display: flex;
-    background-image: url("../img/fondo.jpg");
+    background-image: url("../static/img/fondo.jpg");
     background-size: cover;
     background-repeat: repeat-y;
     background-position: center;
