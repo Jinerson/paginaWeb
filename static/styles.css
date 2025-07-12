@@ -139,6 +139,15 @@ header {
     
 } 
 
+.wrapper.active {
+    height: 510px;
+}
+
+.wrapper.active .Formulario.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
 .Formulario h2 {
     font-size: 2em;
     color: #fff;
@@ -149,9 +158,10 @@ header {
     margin: 10px 0;
 }
 
-.Formulario.login {
-    display: none;
+.Formulario.registro {
+    transform: translateX(400px);
 }
+
 
 .input-box {
     position: relative;

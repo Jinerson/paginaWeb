@@ -3,7 +3,8 @@
 
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    
 </head>
 
 <body>
@@ -53,7 +54,7 @@
                 <button type="submit" class = "btn login">Entrar</button>
                 <section class = "registro-cuenta">
                     <p>¿No tienes una cuenta?</p>
-                    <a href="#" class="link-registro login">Registrarse</a>
+                    <a href="#" class="link-registro registrar">Registrarse</a>
                 </section>
             </form>
         </section>
@@ -95,13 +96,14 @@
                 <button type="submit" class = "btn entrar">Entrar</button>
                 <section class = "registro-cuenta">
                     <p>¿Ya tienes una cuenta?</p>
-                    <a href="#" class="link-registro registrar">Ingresar</a>
+                    <a href="#" class="link-registro ingresar">Ingresar</a>
                 </section>
             </form>
         </section>
         
 
     </section>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>    
 </body>
 </html>
