@@ -108,9 +108,31 @@ header {
     overflow: hidden;
 }
 
+.wrapper .icon-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 1.8em;
+    font-weight: 900;
+    color: #000000;
+    cursor: pointer;
+    padding: 3px 5px 0px 5px;
+    background-color: rgba(255, 255, 255, 0.226);
+    border-radius: 0px 0px 0px 15px;
+    transition: 0.3s, color 0.3s;
+}
+
+.wrapper .icon-close:hover {
+    color: rgb(138, 19, 19);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.wrapper .icon-close:active {
+    transform: scale(0.9);
+}
 .wrapper .Formulario-login {
     width: 100%;
     padding: 20px;
+    
 } 
 
 .Formulario-login h2 {
@@ -196,7 +218,7 @@ header {
     color : #fff;
     width: 30%;
     margin-left: 5px;
-
+    cursor: pointer;
 }
 
 .recuerda-olvido a {
@@ -206,8 +228,15 @@ header {
     color:#fff;
     transition: 0.3s;
     margin-right: 0px;
+    color:rgb(255, 255, 255);
+    
     
 }
+
+.recuerda-olvido a:hover {
+    color: rgb(82, 94, 250);
+    text-decoration: underline;
+}   
 
 .btn-entrar-login {
     width: 100%;
@@ -219,6 +248,9 @@ header {
     font-weight: 1000;
     margin: 20px 0 20px 0;
     transition: 0.1s;
+    border: none;
+    cursor: pointer;
+
 }
 
 .btn-entrar-login:hover {
@@ -229,9 +261,20 @@ header {
     position : relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: row;
     margin: 20px 0 0 0 ;
+    text-decoration: none;
+}
 
+.link-registro {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.link-registro:hover {
+    text-decoration: underline;
+    color: rgb(82, 94, 250);
 }
 
