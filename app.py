@@ -20,7 +20,11 @@ def home():
 
 @app.route('/contacto')
 def contacto():
-    render_template('contacto.html')
+    return render_template('contacto.html')
+
+@app.route('/servicios')
+def servicios():
+    return render_template('servicios.html')
     
 @app.route('/register', methods=['POST'])
 def register():

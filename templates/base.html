@@ -11,12 +11,14 @@
         <h2 class="Logo">Logo</h2>
         <nav class = "barranav">
             <ul>
-                <a href="#">Inicio</a>
-                <a href="#">Servicios</a>
-                <a href="contacto.html">Contacto</a>
+                <a href="{{ url_for('home') }}">Inicio</a>
+                <a href="{{ url_for('servicios') }}">Servicios</a>
+                <a href="{{ url_for('contacto') }}">Contacto</a>
             </ul>
         </nav>
-        <button class = "btonEntrarRegistro">Entrar</button>
+        {%block boton_entrar%}
+
+        {%endblock%}
     </header>
     <body>
         {% block content %}
