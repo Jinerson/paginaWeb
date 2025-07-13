@@ -27,9 +27,9 @@
         </span>
         <section class="Formulario login">
             <h2>Login</h2>
-            <form action="">
+            <form action="/login" method="post">
                 <section class = "input-box">
-                    <input type="mail" title="Introduce tu correo electronico" required>
+                    <input type="email" name="email" title="Introduce tu correo electronico" required>
                     <span class = "icono">
                         <ion-icon name="mail"></ion-icon>
                     </span>
@@ -37,7 +37,7 @@
                     
                 </section>  
                 <section class = "input-box">
-                    <input type="password" class = "input-pw" title="Introduce tu contraseña" required>
+                    <input type="password" name="password" class = "input-pw" title="Introduce tu contraseña" required>
                     <span class = "icono">
                         <ion-icon name="lock"></ion-icon>
                     </span>
@@ -60,17 +60,17 @@
         </section>
         <section class="Formulario registro">
             <h2>Registrarse</h2>
-            <form action="">
+            <form action="/register" method="post">
                 <section class = "input-box">
-                    <input type="text" title="Introduce tu nombre" required>
+                    <input type="text" title="Introduce tu usuario" required>
                     <span class = "icono">
                         <ion-icon name="person"></ion-icon>
                     </span>
-                    <label>Nombre</label>
+                    <label>Usuario</label>
                 </section>
 
                 <section class = "input-box">
-                    <input type="mail" title="Introduce tu correo electronico" required>
+                    <input type="email" name = "email" title="Introduce tu correo electronico" required>
                     <span class = "icono">
                         <ion-icon name="mail"></ion-icon>
                     </span>
@@ -78,7 +78,7 @@
                     
                 </section>  
                 <section class = "input-box">
-                    <input type="password" class = "input-pw" title="Introduce tu contraseña" required>
+                    <input type="password" name = "password" class = "input-pw" title="Introduce tu contraseña" required>
                     <span class = "icono">
                         <ion-icon name="lock"></ion-icon>
                     </span>
@@ -86,14 +86,14 @@
                     
                 </section>
                 <section class = "input-box">
-                    <input type="password" class = "input-pw" title="Confirma tu contraseña" required>
+                    <input type="password" name = "confirm_password" class = "input-pw" title="Confirma tu contraseña" required>
                     <span class = "icono">
                         <ion-icon name="lock"></ion-icon>
                     </span>
                     <label>Confirmar contraseña</label>
                 </section>
 
-                <button type="submit" class = "btn entrar">Entrar</button>
+                <button type="submit" class = "btn entrar">Registrarse</button>
                 <section class = "registro-cuenta">
                     <p>¿Ya tienes una cuenta?</p>
                     <a href="#" class="link-registro ingresar">Ingresar</a>

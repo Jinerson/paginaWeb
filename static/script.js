@@ -4,7 +4,6 @@ const wrapper = document.querySelector('.wrapper');
 const btn_popup = document.querySelector('.btonEntrarRegistro');
 const iconClose = document.querySelector('.icon-close');
 
-
 link_registro.addEventListener('click', () => {
     wrapper.classList.add('active');
 });
