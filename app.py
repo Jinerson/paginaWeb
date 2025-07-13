@@ -43,6 +43,7 @@ def register():
     db.session.commit()
     flash('Usuario registrado con éxito')
     return redirect(url_for('home'))
+
 @app.route('/login', methods=['POST'])
 def login():
     username = request.form['username']
