@@ -7,6 +7,6 @@ link_registro.addEventListener('click', () => {
 });
 
 link_login.addEventListener('click', () => {
-    wrapper.classList.add('active');
+    wrapper.classList.remove('active');
 });
 
