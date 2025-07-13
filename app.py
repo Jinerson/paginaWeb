@@ -18,6 +18,10 @@ class User(db.Model):
 def home():
     return render_template('index.html')    
 
+@app.route('/contacto')
+def contacto():
+    render_template('contacto.html')
+    
 @app.route('/register', methods=['POST'])
 def register():
     username = request.form['username']
